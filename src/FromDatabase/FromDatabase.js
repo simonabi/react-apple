@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export default function FromDatabase() {
     const [database, setDatabase] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:1234/iphoneData")
+        fetch("http://localhost:2729/iphoneData")
             .then((res) => res.json())
             .then((jsonData) => {
                 // console.log(jsonData.products);

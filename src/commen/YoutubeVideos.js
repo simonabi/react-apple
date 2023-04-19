@@ -5,7 +5,7 @@ const YoutubeVideos = () => {
     const [YoutubeVideos, setYoutubeVideos] = useState([]);
     useEffect(() => {
         fetch(
-            'https://www.googleapis.com/youtube/v3/search?key=' + process.env.REACT_APP_API_KEY + '&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=9'
+            // 'https://www.googleapis.com/youtube/v3/search?key=' + process.env.REACT_APP_API_KEY + '&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=9'
         )
             .then((res) => res.json())
             .then((data) => {
@@ -58,4 +58,3 @@ const YoutubeVideos = () => {
 
 export default YoutubeVideos;
 
-// https://www.googleapis.com/youtube/v3/search?key=AIzaSyB4xNW_TeLDTO9tKxmHQAZskoy9Na0sxR0&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=10
